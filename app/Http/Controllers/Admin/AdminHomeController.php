@@ -2,12 +2,11 @@
 use App\Page;
 namespace App\Http\Controllers\Admin;
 use Redis;
-
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Validator;
+use validator;
 class AdminHomeController extends Controller
 {
     public function index()

@@ -17,9 +17,7 @@ class RegisterFacades
     public function bootstrap(Application $app)
     {
         Facade::clearResolvedInstances();
-
         Facade::setFacadeApplication($app);
-
-        AliasLoader::getInstance($app->make('config')->get('app.aliases'))->register();
+        AliasLoader::getInstance($app->make('config')->get('aliases'))->register();
     }
 }
