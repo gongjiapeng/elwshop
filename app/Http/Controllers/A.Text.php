@@ -8,5 +8,8 @@ use App\Http\Requests;
 
 class A.Text extends Controller
 {
-
+    public function index()
+    {
+        return 1;
+    }
 }
