@@ -19,6 +19,7 @@ require __DIR__.'/../vendor/autoload.php';
 
 $aliases = require __DIR__.'/../config/aliases.php';
 Illuminate\Foundation\AliasLoader::getInstance($aliases);
+
 /*
 |--------------------------------------------------------------------------
 | Include The Compiled Class File

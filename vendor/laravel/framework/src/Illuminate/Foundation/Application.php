@@ -525,9 +525,8 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
     public function registerConfiguredProviders()
     {
         $manifestPath = $this->getCachedServicesPath();
-
         (new ProviderRepository($this, new Filesystem, $manifestPath))
-                    ->load($this->config['app.providers']);
+                    ->load($this->config['providers']);
     }
 
     /**
